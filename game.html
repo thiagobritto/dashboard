@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estourando balões</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-body">
+            <table class="panel">
+                <tr>
+                    <td>
+                        <img src="imagens/balao_azul_grande.png" alt="">
+                    </td>
+                    <td>
+                        <span class="time-panel" id="balls"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imagens/balao_azul_grande_estourado.png" alt="imagem balao azul grande">
+                    </td>
+                    <td>
+                        <span class="time-panel" id="balls-pow"></span>
+                    </td>
+                </tr>
+            </table>
+            <table id="watch">
+                <tr>
+                    <td>
+                        <span id="watch-time"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="background"></div>
+    </div>
+    <div id="overlay" class="hideModal"></div>
+    <div id="alert" class="hideModal">
+        <div id="message"></div>
+        <select id="level">
+            <option value="1">Easy</option>
+            <option value="2">Middle</option>
+            <option value="3">Hard</option>
+        </select>
+        <div class="bottom">
+            <a href="#" onclick="restart()"> Restart </a>
+            <a href="/" "> Stop </a>
+        </div>
+    </div>
+
+    <script src="./scripts/game.js "></script>
+</body>
+
+</html>
