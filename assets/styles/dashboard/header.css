@@ -5,8 +5,8 @@
   grid-column-gap: 20px;
   height: 40px;
   padding: 0 20px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.102);
   position: relative;
+  background: linear-gradient(#ffffff, #f1f1f166);
 }
 
 .dh div {
@@ -45,4 +45,16 @@
 
 #dh-search:focus {
   left: 0%;
+}
+
+@media only screen and (min-width: 960px) {
+  .dh{
+    grid-area: header;
+    padding-right: 0;
+  }
+
+  #dh-search{
+    position: static;
+    background-color: rgba(80, 80, 80, 0.03);
+  }
 }

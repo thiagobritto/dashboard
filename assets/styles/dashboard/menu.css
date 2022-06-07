@@ -1,0 +1,59 @@
+.dm {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  transition: left .3s;
+}
+
+.dm-show {
+  left: 0%;
+}
+
+.dm-nav {
+  width: 200px;
+  background-color: #ffffff;
+}
+
+.dm-nav>header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  background: linear-gradient(#ffffff, #f1f1f166);
+}
+
+.dm-nav>ul {
+  list-style: none;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.dm-nav>ul li a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.dm-overlay {
+  width: calc(100% - 200px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 960px) {
+  .dm {
+    position: static;
+    height: calc(100vh - 20px);
+    grid-area: nav;
+  }
+
+  .dm-nav {
+    width: 100%;
+  }
+
+  .dm-overlay{
+    display: none;
+  }
+}

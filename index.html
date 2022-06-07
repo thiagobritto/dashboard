@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="./assets/styles/global.css">
   <link rel="stylesheet" href="./assets/styles/dashboard/dashboard.css">
   <link rel="stylesheet" href="./assets/styles/dashboard/header.css">
+  <link rel="stylesheet" href="./assets/styles/dashboard/menu.css">
+  <link rel="stylesheet" href="./assets/styles/dashboard/content.css">
+  <link rel="stylesheet" href="./assets/styles/dashboard/footer.css">
 
 </head>
 
@@ -31,18 +34,30 @@
       <div>
         <a class="dh-logo" href="#">Dashnoard</a>
       </div>
+      <input type="search" id="dh-search" placeholder="Buscar ...">
       <div>
         <label for="dh-search" class="dh-btn-search">
           <i class="material-icons">search</i>
         </label>
       </div>
-      <input type="search" id="dh-search" placeholder="Buscar ...">
     </header>
     <aside class="dm">
-      left
+      <nav class="dm-nav">
+        <header>
+          <img width="25" src="./assets/images/user.webp" alt="Imagem do usuario"> 
+          &nbsp;
+          <h6>Usuário</h6>
+        </header>
+        <ul>
+          <li><a href="home.html" target="content">Home</a></li>
+        </ul>
+      </nav>
+      <div class="dm-overlay">
+        
+      </div>
     </aside>
     <main class="dc">
-      content
+      <iframe src="home.html" name="content"></iframe>
     </main>
     <footer class="df">
       bottom
