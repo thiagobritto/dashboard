@@ -1,60 +1,12 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estourando balões</title>
-
-    <style>
-        * {
-            font-family: sans-serif;
-        }
-        
-        #level {
-            border: 1px solid #a1a1a1;
-            padding: 3px;
-            font-size: 16px;
-            border-radius: 2px;
-        }
-        
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-        }
-        
-        .label {
-            margin: 30px 0;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="label">
-            <strong>Level</strong>
-            <select id="level">
-                <option value="1">Easy</option>
-                <option value="2">Middle</option>
-                <option value="3">Hard</option>
-		    </select>
-        </div>
-        <img src="./imagens/iniciar.png" alt="Play" title="Play" onclick="init()">
-    </div>
-
-    <script>
-        const init = () => {
-            // Code ...
-            let level = document.querySelector('#level').value;
-            window.location.href = "game.html?" + level;
-        }
-    </script>
-
+  
 </body>
-
 </html>
