@@ -17,53 +17,50 @@
 
   <!--styles-->
   <link rel="stylesheet" href="./assets/styles/global.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard/dashboard.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard/header.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard/menu.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard/content.css">
-  <link rel="stylesheet" href="./assets/styles/dashboard/footer.css">
+  <link rel="stylesheet" href="./assets/styles/dashboard.css">
 
 </head>
 
 <body>
-  <section class="container">
-    <header class="dh">
-      <div>
-        <i class="material-icons dh-btn-menu">menu</i>
-      </div>
-      <div>
-        <a class="dh-logo" href="#">Dashnoard</a>
-      </div>
-      <input type="search" id="dh-search" placeholder="Buscar ...">
-      <div>
-        <label for="dh-search" class="dh-btn-search">
-          <i class="material-icons">search</i>
-        </label>
-      </div>
-    </header>
-    <aside class="dm">
-      <nav class="dm-nav">
-        <header>
-          <img width="25" src="./assets/images/user.webp" alt="Imagem do usuario"> 
-          &nbsp;
-          <h6>Usuário</h6>
-        </header>
-        <ul>
-          <li><a href="home.html" target="content">Home</a></li>
-        </ul>
+  <section class="ds">
+    <aside>
+      <header>
+        <img width="28" src="./assets/images/user.webp" alt="inagem do usuário"> 
+        &nbsp;Usuário
+      </header>
+      <nav>
+        <a href="home.html" onclick="closeMenu()" target="ds-window">Home</a>
+        <a href="report.html" onclick="closeMenu()" target="ds-window">Relatorios</a>
       </nav>
-      <div class="dm-overlay">
-        
-      </div>
+      <div class="overmenu"></div>
     </aside>
-    <main class="dc">
-      <iframe src="home.html" name="content"></iframe>
-    </main>
-    <footer class="df">
-      bottom
-    </footer>
-  </section>
+    <section>
+      <header>
+        <i id="mob-btn-menu" class="material-icons">menu</i> 
+        <i id="web-btn-menu" class="material-icons">menu</i> 
+        <div>
+          <span>Dashboard</span>
+          <label>
+            <input type="search" placeholder="Buscar">
+            <i class="material-icons">search</i> 
+          </label>
+        </div>
+      </header>
+      <iframe src="home.html" name="ds-window">
 
+      </iframe>
+    </section>
+  </section>
+  <footer class="ds-footer">
+    <span>bottom</span>
+  </footer>
+
+  <script type="text/javascript">
+    const navMenu = document.querySelector('.ds>aside')
+    function closeMenu(){
+      navMenu.classList.toggle('menu-show')
+    }
+  </script>
   <script type="module" src="./main.js"></script>
 </body>
 

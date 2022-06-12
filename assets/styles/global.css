@@ -40,3 +40,17 @@ h6,
 .h6 {
     font-size: 1em;
 }
+
+@media screen and (min-width: 960px) {
+    [id*=mob-],
+    [class*=mob-] {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    [id*=web-],
+    [class*=web-] {
+        display: none;
+    }
+}

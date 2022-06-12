@@ -1,13 +1,20 @@
-
-const btnMenu = document.querySelector('.dh-btn-menu')
-const navMenu = document.querySelector('.dm')
-const clsMenu = document.querySelector('.dm-overlay')
+/* 
 const content = document.querySelector('.dc')
 
-btnMenu.onclick = toggleMenu
+*/
+
+const btnMenuMob = document.querySelector('#mob-btn-menu')
+const btnMenuWeb = document.querySelector('#web-btn-menu')
+const navMenu = document.querySelector('.ds>aside')
+const clsMenu = document.querySelector('.ds>aside>div.overmenu')
+
+btnMenuMob.onclick = toggleMenu
 clsMenu.onclick = toggleMenu
 
-function toggleMenu(){
-  navMenu.classList.toggle('dm-show')
-  content.classList.toggle('dc-full')
+btnMenuWeb.onclick = () => {
+  navMenu.classList.toggle('menu-hide')
 }
+
+function toggleMenu(){
+  navMenu.classList.toggle('menu-show')
+} 
