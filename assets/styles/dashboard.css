@@ -30,6 +30,12 @@
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 2;
+  background-color: #8282ff;
+  color: #fff;
+}
+
+.ds>aside>header>img{
+  border-radius: 50%;
 }
 
 .ds>aside>nav {
@@ -47,7 +53,7 @@
 }
 
 .ds>aside>nav>a:hover {
-  background-color: #f1f1f1;
+  background-color: #fafafa;
 }
 
 .ds>aside>div.overmenu {
@@ -65,11 +71,9 @@
   height: 40px;
   width: 100%;
   padding: 0 10px;
-  background-color: rgba(255,255,255,.2);
 }
 
 /* section dashboard */
-
 
 .ds>section>header>i#mob-btn-menu,
 .ds>section>header>i#web-btn-menu {
@@ -117,6 +121,7 @@
   border: none;
   outline: none;
   z-index: 0;
+  background-color: #f4f4f4;
 }
 
 /* media screen */
